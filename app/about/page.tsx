@@ -11,7 +11,7 @@ export default function AboutPage() {
                     inevitable in hindsight—then we open them to collaborators.
                 </p>
                 <p className="text-black/90 dark:text-white/90">
-                    This prototype site is a doorway into a few of our current "worlds." The Rolodex on
+                    This prototype site is a doorway into a few of our current &quot;worlds.&quot; The Rolodex on
                     the homepage is our index.
                 </p>
             </article>

@@ -25,7 +25,7 @@ export default function BenjaminBournePage() {
 
                     <p>
                         His work explores how technology can amplify human connection and cultural memory,
-                        creating systems that feel both inevitable and magical. He's passionate about
+                        creating systems that feel both inevitable and magical. He&apos;s passionate about
                         building tools that empower creators and communities.
                     </p>
 

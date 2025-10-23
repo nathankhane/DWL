@@ -25,7 +25,7 @@ export default function LISAPage() {
 
                     <p>
                         LISA assists artists and designers in creating works that respond to physical space,
-                        lighting conditions, and viewer movement. It's a creative partner that enhances
+                        lighting conditions, and viewer movement. It&apos;s a creative partner that enhances
                         artistic vision without imposing its own aesthetic.
                     </p>
 

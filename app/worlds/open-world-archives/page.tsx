@@ -19,7 +19,7 @@ export default function OpenWorldArchivesPage() {
                 <div className="space-y-4 pt-4 text-black/90 dark:text-white/90">
                     <p>
                         theOpen World Archives (OWA) is a platform for preserving and sharing cultural
-                        memory through spatial media. We're building tools that let communities capture,
+                        memory through spatial media. We&apos;re building tools that let communities capture,
                         organize, and experience their stories in immersive formats.
                     </p>
 

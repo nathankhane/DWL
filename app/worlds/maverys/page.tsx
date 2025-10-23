@@ -19,12 +19,12 @@ export default function MaverysPage() {
                 <div className="space-y-4 pt-4 text-black/90 dark:text-white/90">
                     <p>
                         Maverys is a collective of independent creators, technologists, and designers
-                        who value craft, collaboration, and creative freedom. We're building an
+                        who value craft, collaboration, and creative freedom. We&apos;re building an
                         alternative to traditional studio models—one that puts makers first.
                     </p>
 
                     <p>
-                        Members share resources, collaborate on projects, and support each other's
+                        Members share resources, collaborate on projects, and support each other&apos;s
                         growth. We believe the best work comes from giving talented people space to
                         experiment, fail, and discover their unique voice.
                     </p>
@@ -42,7 +42,7 @@ export default function MaverysPage() {
                     <h2 className="text-2xl font-semibold pt-6 text-black/90 dark:text-white/90">Join the Guild</h2>
                     <p className="text-black/70 dark:text-white/70">
                         Maverys is currently accepting applications from makers in all disciplines.
-                        We're looking for people who are curious, generous, and committed to their craft.
+                        We&apos;re looking for people who are curious, generous, and committed to their craft.
                     </p>
 
                     <div className="pt-6">

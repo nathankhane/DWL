@@ -51,6 +51,17 @@ export default function Rolodex() {
         else setIndex(i => (i - 1 + CARDS.length) % CARDS.length);
     }, []);
 
+    // Precompute card targets (MUST be before conditional return)
+    const targets = useMemo(() => {
+        // center origin fan: rotate around bottom center; fan spreads and slight x offset
+        return CARDS.map((_, i) => {
+            const angle = ANGLES[i % ANGLES.length];
+            const x = angle * 5;        // lateral spread
+            const y = -Math.abs(angle) * 0.2 - 10; // subtle vertical lift
+            return { angle, x, y };
+        });
+    }, []);
+
     // Reduced-motion: simple list
     if (prefersReduced) {
         return (
@@ -73,17 +84,6 @@ export default function Rolodex() {
             </main>
         );
     }
-
-    // Precompute card targets
-    const targets = useMemo(() => {
-        // center origin fan: rotate around bottom center; fan spreads and slight x offset
-        return CARDS.map((_, i) => {
-            const angle = ANGLES[i % ANGLES.length];
-            const x = angle * 5;        // lateral spread
-            const y = -Math.abs(angle) * 0.2 - 10; // subtle vertical lift
-            return { angle, x, y };
-        });
-    }, []);
 
     return (
         <main className="min-h-dvh overflow-hidden" onWheel={onWheel}>
