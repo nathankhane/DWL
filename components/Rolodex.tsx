@@ -100,7 +100,7 @@ export default function Rolodex() {
                         aria-label="DW-L Rolodex"
                         aria-activedescendant={CARDS[index].id}
                         tabIndex={0}
-                        className="relative w-[min(90vw,800px)] h-[min(64vh,520px)]"
+                        className="relative w-[min(95vw,800px)] h-[min(70vh,520px)] sm:w-[min(90vw,800px)] sm:h-[min(64vh,520px)]"
                     >
                         <AnimatePresence initial={false}>
                             {CARDS.map((card, i) => {
@@ -131,19 +131,20 @@ export default function Rolodex() {
                                                 setIndex(i);
                                             }
                                         }}
-                                        className="absolute left-1/2 bottom-6 -translate-x-1/2 origin-bottom 
+                                        className="absolute left-1/2 bottom-4 sm:bottom-6 -translate-x-1/2 origin-bottom 
                                border border-white/20 dark:border-white/10
-                               rounded-2xl bg-black/40 dark:bg-black/60 backdrop-blur-md p-6 
-                               w-[min(88vw,560px)] shadow-card
-                               focus-visible:ring-2 ring-white/80 cursor-pointer transition-colors"
+                               rounded-xl sm:rounded-2xl bg-black/40 dark:bg-black/60 backdrop-blur-md 
+                               p-4 sm:p-6 w-[min(92vw,560px)] shadow-card
+                               focus-visible:ring-2 ring-white/80 cursor-pointer transition-colors
+                               touch-manipulation"
                                         style={{
                                             zIndex: 1000 - Math.abs(i - index),
                                         }}
                                     >
-                                        <div className="text-2xl md:text-3xl font-semibold tracking-tight text-white">{card.title}</div>
-                                        <div className="mt-1 text-white/70">{card.tagline}</div>
+                                        <div className="text-xl sm:text-2xl md:text-3xl font-semibold tracking-tight text-white leading-tight">{card.title}</div>
+                                        <div className="mt-1 sm:mt-2 text-sm sm:text-base text-white/70 leading-snug">{card.tagline}</div>
                                         {isActive && (
-                                            <div className="mt-3 text-sm text-white/50">Click to explore →</div>
+                                            <div className="mt-2 sm:mt-3 text-xs sm:text-sm text-white/50">Tap to explore →</div>
                                         )}
                                     </motion.button>
                                 );
@@ -153,8 +154,9 @@ export default function Rolodex() {
                 </div>
 
                 {/* Subtle footer hint */}
-                <div className="absolute bottom-6 w-full text-center text-xs text-black/50 dark:text-white/50">
-                    Scroll, drag, or ←/→ • ESC resets
+                <div className="absolute bottom-2 sm:bottom-6 w-full text-center text-[10px] sm:text-xs text-black/50 dark:text-white/50 px-4">
+                    <span className="hidden sm:inline">Scroll, drag, or ←/→ • ESC resets</span>
+                    <span className="sm:hidden">Swipe or scroll to browse</span>
                 </div>
             </motion.div>
         </main>

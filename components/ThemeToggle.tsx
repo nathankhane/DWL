@@ -14,18 +14,19 @@ export default function ThemeToggle() {
     return (
         <motion.button
             onClick={toggleTheme}
-            className="fixed top-4 md:top-6 right-4 md:right-6 z-[9999] p-3 rounded-full 
-                 bg-white/10 hover:bg-white/20 dark:bg-white/10 dark:hover:bg-white/20
-                 backdrop-blur-sm border border-white/10 transition-colors
-                 focus-visible:ring-2 ring-white/80"
+            className="fixed top-3 sm:top-4 md:top-6 right-3 sm:right-4 md:right-6 z-[9999] 
+                 p-2.5 sm:p-3 rounded-full bg-white/10 hover:bg-white/20 
+                 dark:bg-white/10 dark:hover:bg-white/20 backdrop-blur-sm 
+                 border border-white/10 transition-colors focus-visible:ring-2 
+                 ring-white/80 touch-manipulation active:scale-95"
             whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
+            whileTap={{ scale: 0.9 }}
             aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} mode`}
         >
             {theme === "light" ? (
                 // Moon icon (for switching to dark mode)
                 <svg
-                    className="w-5 h-5 text-gray-900"
+                    className="w-4 h-4 sm:w-5 sm:h-5 text-gray-900"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -40,7 +41,7 @@ export default function ThemeToggle() {
             ) : (
                 // Sun icon (for switching to light mode)
                 <svg
-                    className="w-5 h-5 text-white"
+                    className="w-4 h-4 sm:w-5 sm:h-5 text-white"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"

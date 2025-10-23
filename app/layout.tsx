@@ -38,7 +38,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </head>
             <body className="min-h-dvh">
                 <ThemeProvider>
-                    <header className="fixed top-0 left-0 right-0 z-[9999] p-4 md:p-6">
+                    <header className="fixed top-0 left-0 right-0 z-[9999] p-3 sm:p-4 md:p-6">
                         <div className="flex justify-center">
                             <Link href="/">
                                 <LogoSwitcher />

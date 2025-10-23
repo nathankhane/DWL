@@ -15,7 +15,7 @@ export default function LogoSwitcher() {
                 width={300}
                 height={45}
                 priority
-                className="h-7 md:h-8 w-auto opacity-90 hover:opacity-100 transition-opacity"
+                className="h-6 sm:h-7 md:h-8 w-auto opacity-90 hover:opacity-100 transition-opacity"
             />
         );
     }
